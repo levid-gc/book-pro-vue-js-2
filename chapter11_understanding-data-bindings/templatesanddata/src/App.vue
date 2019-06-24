@@ -36,7 +36,7 @@ export default class App extends Vue {
   public lowTaxRate: number = 12;
   public highTaxRate: number = 20;
 
-  public getTotalPrice(taxRate): number {
+  public getTotalPrice(taxRate: number): number {
     return this.price + (this.price * (taxRate / 100));
   }
 }
