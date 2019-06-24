@@ -1,0 +1,106 @@
+# [EditorConfig](https://EditorConfig.org) 用于协助同一项目的多位开发者在不同的编辑器或 IDE 中保持一致的编码风格。
+#
+# version: 0.0.4
+#
+# usages:
+#   - Visual Studio      [native support, help: https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options]
+#   - IntelliJ IDEA      [native support, help: https://plugins.jetbrains.com/plugin/7294-editorconfig]
+#   - PyCharm            [native support, help: https://plugins.jetbrains.com/plugin/7294-editorconfig]
+#   - GitHub             [native support]
+#   - Visual Studio Code [plugin: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig]
+#   - Eclipse            [plugin: https://github.com/ncjones/editorconfig-eclipse#readme]
+#   - Sublime Text       [plugin: https://github.com/sindresorhus/editorconfig-sublime#readme]
+#   - Notepad++          [plugin: https://github.com/editorconfig/editorconfig-notepad-plus-plus#readme]
+#   - Atom               [plugin: https://github.com/sindresorhus/atom-editorconfig#readme]
+#   - Vim                [plugin: https://github.com/editorconfig/editorconfig-vim#readme]
+#   - Emacs              [plugin: https://github.com/editorconfig/editorconfig-emacs#readme]
+#   - NetBeans           [plugin: https://github.com/welovecoding/editorconfig-netbeans#readme]
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Batch
+[*.bat]
+indent_style = tab
+
+# C/C++
+[*.{c,cxx,cpp,h,hxx,hpp}]
+indent_size = 4
+
+# C#
+[*.{cs,csx}]
+indent_size = 4
+
+# CSS/Sass/Less
+[*.{css,scss,less}]
+indent_size = 2
+max_line_length = 80
+; Minified files
+[*.min.css]
+indent_style = unset
+insert_final_newline = false
+max_line_length = unset
+
+# Groovy
+[*.groovy]
+indent_size = 4
+
+# Makefile
+[Makefile]
+indent_style = tab
+trim_trailing_whitespace = false
+
+# Markdown
+[*.{md,markdown}]
+trim_trailing_whitespace = false
+
+# HTML
+[*.html]
+indent_size = 2
+
+# Java
+[*.java]
+indent_size = 4
+
+# JavaScript/TypeScript
+[*.{js,ts}]
+indent_size = 2
+max_line_length = 120
+; Minified files
+[*.min.js]
+indent_style = unset
+insert_final_newline = false
+max_line_length = unset
+
+# JSON
+[*.json]
+indent_size = 2
+insert_final_newline = false
+
+# Kotlin
+[*.kt]
+indent_size = 4
+
+# Python
+[*.py]
+indent_size = 4
+; Docstrings and comments use max_line_length = 80
+max_line_length = 120
+
+# Scala
+[*.scala]
+indent_size = 2
+
+# XML
+[*.xml]
+indent_size = 4
+
+# YAML
+[*.{yml,yaml}]
+indent_size = 2
